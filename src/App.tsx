@@ -1,25 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { createTheme, ThemeProvider } from "@mui/material";
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import "./App.css";
+import AboutPage from "./Pages/AboutPage";
+import ContactPage from "./Pages/ContactPage";
+import HomePage from "./Pages/HomePage";
 
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#00274C",
+    },
+    secondary: {
+      main: "#FFCB05",
+    },
+    background: {
+      default: "#FAF9F6",
+    },
+  },
+});
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <div className="App">
+          <Switch>
+            <Route path={"/about"} exact component={AboutPage} />
+            <Route path={"/contact"} component={ContactPage} />
+            <Route path={"/"} component={HomePage} />
+          </Switch>
+        </div>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
