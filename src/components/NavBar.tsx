@@ -14,6 +14,9 @@ import Button from "@mui/material/Button";
 import { useHistory } from "react-router-dom";
 import logo from "../images/Sack-the-Stigma.png";
 import instagram from "../images/instagram-logo.png";
+import { Menu } from "@mui/icons-material";
+import { useMediaQuery } from "@mui/material";
+import { Theme } from "@mui/system";
 
 interface Props {
   /**
@@ -37,17 +40,18 @@ export default function NavBar(props: Props) {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+  const isSmallScreen = useMediaQuery((theme: Theme) =>
+    theme.breakpoints.down("sm")
+  );
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        Sack the Stigma
-      </Typography>
+      <img alt="sack the stigma logo" src={logo} style={{ height: 70 }} />
       <Divider />
       <List>
         {navItems.map((item) => (
           <ListItem key={item.title} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton sx={{ textAlign: "center" }} href={item.to}>
               <ListItemText primary={item.title} />
             </ListItemButton>
           </ListItem>
@@ -64,15 +68,20 @@ export default function NavBar(props: Props) {
       <Box sx={{ display: "flex" }}>
         <AppBar component="nav">
           <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-            <IconButton
+            {/* <IconButton
               color="inherit"
               aria-label="open drawer"
               edge="start"
-              onClick={handleDrawerToggle}
+              
               sx={{ mr: 2, display: { sm: "none" } }}
             >
-              Btn
-            </IconButton>
+              
+            </IconButton> */}
+            <Menu
+              fontSize="large"
+              sx={{ mr: 2, display: { sm: "none" } }}
+              onClick={handleDrawerToggle}
+            />
             <div
               style={{
                 flexDirection: "row",
@@ -80,13 +89,15 @@ export default function NavBar(props: Props) {
                 alignItems: "center",
               }}
             >
-              <a href={"/"}>
-                <img
-                  alt="sack the stigma logo"
-                  src={logo}
-                  style={{ height: 70, marginRight: 16 }}
-                />
-              </a>
+              {!isSmallScreen && (
+                <a href={"/"}>
+                  <img
+                    alt="sack the stigma logo"
+                    src={logo}
+                    style={{ height: 70, marginRight: 16 }}
+                  />
+                </a>
+              )}
               <Box sx={{ display: { xs: "none", sm: "block" } }}>
                 {navItems.map((item) => (
                   <Button

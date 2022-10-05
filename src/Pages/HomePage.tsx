@@ -3,9 +3,6 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import "../css/main.css";
 export default function HomePage() {
-  const isSmallScreen = useMediaQuery((theme: Theme) =>
-    theme.breakpoints.down("sm")
-  );
   return (
     <div
       id="wrapper"
