@@ -1,4 +1,3 @@
-import { Theme, Typography, useMediaQuery } from "@mui/material";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import background from "../images/FBL13-NotreDame.jpg";
@@ -63,7 +62,6 @@ export default function HomePage() {
               >
                 HERE
               </a>
-              .
             </p>
           </header>
           <ul className="actions special">

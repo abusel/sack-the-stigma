@@ -114,7 +114,7 @@ export default function NavBar(props: Props) {
             </div>
             <div>
               <a
-                href="http://Instagram.com/sohoyouthclub"
+                href="http://Instagram.com/sackthestigma"
                 target="_blank"
                 rel="noreferrer"
               >
