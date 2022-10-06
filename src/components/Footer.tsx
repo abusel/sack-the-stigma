@@ -43,7 +43,11 @@ export default function Footer() {
           rel="noreferrer"
           href="https://valiantuofm.com/"
         >
-          <img src={valiant} style={{ height: "100%" }} alt="Valiant logo" />
+          <img
+            src={valiant}
+            style={{ height: "100%", filter: "brightness(0) invert(1)" }}
+            alt="Valiant logo"
+          />
         </a>
       </div>
       <div id="copyright" style={{ marginBottom: "40px", marginTop: "30px" }}>
