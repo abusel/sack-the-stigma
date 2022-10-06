@@ -27,7 +27,7 @@ export default function HomePage() {
         <ul className="actions">
           <li>
             <a
-              href="#header"
+              href="#learn-more"
               className="button icon solid solo fa-arrow-down scrolly"
             >
               Continue
@@ -39,13 +39,12 @@ export default function HomePage() {
       {/* <!-- Main --> */}
       <div id="main">
         {/* <!-- Featured Post --> */}
+        <a id="learn-more"></a>
         <article className="post featured">
           <header className="major">
             <h2>
-              <a href="#">
-                What is Sack the Stigma?
-                <br />
-              </a>
+              What is Sack the Stigma?
+              <br />
             </h2>
             <p>
               Sack the Stigma is a joint partnership between Soho Youth Club and
