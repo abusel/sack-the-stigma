@@ -3249,7 +3249,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://gray-wndu-prod.cdn.arcpublishing.com/resizer/GmmPopE4KjZbpsE5VJo1Jl1bKAU=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/IWWPZLTKHRDTVN3TDIBDOTDDCM.jpg");
+			background-image: url("../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/FBL13-NotreDame.jpg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat-y,								no-repeat,													no-repeat;
@@ -3473,7 +3473,7 @@ input, select, textarea {
 
 			#intro {
 				padding: 4rem 4rem 2rem 4rem ;
-				min-height: 90vh;
+				min-height: 60vh;
 			}
 
 				#intro p br {
@@ -3490,7 +3490,7 @@ input, select, textarea {
 
 			#intro {
 				padding: 3rem 2rem 1rem 2rem ;
-				min-height: 80vh;
+				min-height: 50vh;
 			}
 
 				#intro h1 {

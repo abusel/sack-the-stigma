@@ -3,6 +3,7 @@ import { Alert, CircularProgress, Snackbar } from "@mui/material";
 import { useState } from "react";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
+import background from "../images/FBL13-NotreDame.jpg";
 
 export default function ContactPage() {
   let [name, setName] = useState("");
@@ -16,7 +17,8 @@ export default function ContactPage() {
     <div
       id="wrapper"
       style={{
-        backgroundImage: `url("https://gray-wndu-prod.cdn.arcpublishing.com/resizer/GmmPopE4KjZbpsE5VJo1Jl1bKAU=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/IWWPZLTKHRDTVN3TDIBDOTDDCM.jpg")`,
+        backgroundImage: `url(${background})`,
+        backgroundSize: "contain",
       }}
     >
       <NavBar />

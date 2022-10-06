@@ -1,6 +1,8 @@
 import { Theme, Typography, useMediaQuery } from "@mui/material";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
+import background from "../images/FBL13-NotreDame.jpg";
+
 import "../css/main.css";
 export default function HomePage() {
   return (
@@ -8,7 +10,8 @@ export default function HomePage() {
       id="wrapper"
       className="fade-in"
       style={{
-        backgroundImage: `url("https://gray-wndu-prod.cdn.arcpublishing.com/resizer/GmmPopE4KjZbpsE5VJo1Jl1bKAU=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/IWWPZLTKHRDTVN3TDIBDOTDDCM.jpg")`,
+        backgroundImage: `url(${background})`,
+        backgroundSize: "contain",
       }}
     >
       <NavBar />
@@ -33,13 +36,6 @@ export default function HomePage() {
           </li>
         </ul>
       </div>
-
-      {/* <!-- Header --> */}
-      <header id="header">
-        <a href="index.html" className="logo">
-          Massively
-        </a>
-      </header>
 
       {/* <!-- Main --> */}
       <div id="main">

@@ -9,6 +9,7 @@ import brett from "../images/brett_headshot_2.jpg";
 import jared from "../images/jared1.jpg";
 import carly from "../images/carly_headshot.jpg";
 import Footer from "../components/Footer";
+import background from "../images/FBL13-NotreDame.jpg";
 
 const TABS = ["mission", "team"];
 export default function AboutPage() {
@@ -16,13 +17,16 @@ export default function AboutPage() {
   const isSmallScreen = useMediaQuery((theme: Theme) =>
     theme.breakpoints.down("sm")
   );
+
   return (
     <div>
       <NavBar />
+
       <div
         id="wrapper"
         style={{
-          backgroundImage: `url("https://gray-wndu-prod.cdn.arcpublishing.com/resizer/GmmPopE4KjZbpsE5VJo1Jl1bKAU=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/IWWPZLTKHRDTVN3TDIBDOTDDCM.jpg")`,
+          backgroundImage: `url(${background})`,
+          backgroundSize: "contain",
         }}
       >
         <header id="header">

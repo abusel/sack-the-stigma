@@ -3,15 +3,12 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import { useHistory } from "react-router-dom";
 import logo from "../images/Sack-the-Stigma.png";
 import instagram from "../images/instagram-logo.png";
 import { Menu } from "@mui/icons-material";
@@ -49,6 +46,11 @@ export default function NavBar(props: Props) {
       <img alt="sack the stigma logo" src={logo} style={{ height: 70 }} />
       <Divider />
       <List>
+        <ListItem key={"home"} disablePadding>
+          <ListItemButton sx={{ textAlign: "center" }} href={"/"}>
+            <ListItemText primary={"Home"} />
+          </ListItemButton>
+        </ListItem>
         {navItems.map((item) => (
           <ListItem key={item.title} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }} href={item.to}>
@@ -111,15 +113,21 @@ export default function NavBar(props: Props) {
               </Box>
             </div>
             <div>
-              <img
-                alt="instagram logo"
-                src={instagram}
-                style={{
-                  height: 30,
-                  marginTop: 15,
-                  filter: "brightness(0) invert(1)",
-                }}
-              />
+              <a
+                href="http://Instagram.com/sohoyouthclub"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  alt="instagram logo"
+                  src={instagram}
+                  style={{
+                    height: 30,
+                    marginTop: 15,
+                    filter: "brightness(0) invert(1)",
+                  }}
+                />
+              </a>
             </div>
           </Toolbar>
         </AppBar>
