@@ -66,9 +66,6 @@ export default function HomePage() {
               .
             </p>
           </header>
-          <a href="#" className="image main">
-            <img src="images/pic01.jpg" alt="" />
-          </a>
           <ul className="actions special">
             <li>
               <a href="/about" className="button large">
