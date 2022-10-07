@@ -53,6 +53,8 @@ export default function HomePage() {
               young adults, and student-athletes. We continuously put out
               different collections of Sack the Stigma merchandise, and proceeds
               are used to benefit those who cannot afford adequate therapy. Our
+              new collection will be available for purchase soon.
+              {/* Our
               current collection is now available for purchase{" "}
               <a
                 href={"https://www.sohoyouthclub.com"}
@@ -60,7 +62,7 @@ export default function HomePage() {
                 rel="noreferrer"
               >
                 HERE
-              </a>
+              </a> */}
             </p>
           </header>
           <ul className="actions special">
