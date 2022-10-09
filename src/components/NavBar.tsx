@@ -26,7 +26,10 @@ interface Props {
 const drawerWidth = 240;
 const navItems = [
   { title: "About", to: "/about" },
-  { title: "Shop", to: "https://www.sohoyouthclub.com/" },
+  {
+    title: "Shop",
+    to: "https://www.mden.com/product/SYC_x_Valiant_Sack_the_Stigma_Navy_Long_Sleeve_Tee?VA2238+SEARCH",
+  },
   { title: "Get Involved", to: "/contact" },
 ];
 

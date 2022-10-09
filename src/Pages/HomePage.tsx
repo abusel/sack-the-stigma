@@ -53,16 +53,16 @@ export default function HomePage() {
               young adults, and student-athletes. We continuously put out
               different collections of Sack the Stigma merchandise, and proceeds
               are used to benefit those who cannot afford adequate therapy. Our
-              new collection will be available for purchase soon.
-              {/* Our
               current collection is now available for purchase{" "}
               <a
-                href={"https://www.sohoyouthclub.com"}
+                href={
+                  "https://www.mden.com/product/SYC_x_Valiant_Sack_the_Stigma_Navy_Long_Sleeve_Tee?VA2238+SEARCH"
+                }
                 target={"_blank"}
                 rel="noreferrer"
               >
                 HERE
-              </a> */}
+              </a>
             </p>
           </header>
           <ul className="actions special">
