@@ -28,7 +28,7 @@ const navItems = [
   { title: "About", to: "/about" },
   {
     title: "Shop",
-    to: "https://www.mden.com/product/SYC_x_Valiant_Sack_the_Stigma_Navy_Long_Sleeve_Tee?VA2238+SEARCH",
+    to: "https://www.sohoyouthclub.com/",
   },
   { title: "Get Involved", to: "/contact" },
 ];
